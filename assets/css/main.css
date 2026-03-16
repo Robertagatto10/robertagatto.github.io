@@ -3339,3 +3339,62 @@ input, select, textarea {
 			}
 
 	}
+/* RESET TESTO SECONDA PAGINA (#MAIN) */
+#main, #main p, #main header p, #main header h2 {
+    color: #444444 !important; /* Un grigio molto scuro, quasi nero */
+    font-weight: normal !important; /* Toglie ogni tipo di grassetto */
+    text-transform: none !important; /* Toglie il tutto maiuscolo se presente */
+}
+
+/* SE VUOI CHE I TITOLI SIANO NERI E NON VIOLA */
+#main h2, #main h3 {
+    color: #222222 !important;
+    font-weight: 400 !important; /* Peso normale */
+}
+
+/* SE CI SONO DEI LINK NELLA SECONDA PAGINA CHE VUOI NON COLORATI */
+#main a {
+    color: #222222 !important;
+    border-bottom: 1px solid #222222 !important;
+    font-weight: normal !important;
+}
+/* RIMUOVI SOTTOLINEATURE NELLA SEZIONE CENTRALE */
+#main a, #main p, #main h2, #main h3 {
+    text-decoration: none !important; /* Toglie la sottolineatura standard */
+    border-bottom: none !important;   /* Toglie eventuali linee decorative sotto le parole */
+    box-shadow: none !important;      /* Toglie ombre che possono sembrare linee */
+}
+
+/* APPLICHIAMO IL RESET A TUTTI I LINK DELLA SECONDA PAGINA */
+#main a {
+    color: #444444 !important; /* Colore scuro, non viola */
+    font-weight: normal !important;
+    border: 0 !important;
+}
+/* Sfondo viola chiaro per il quadrante centrale */
+.wrapper.style2, .wrapper.style3 {
+    background-color: #ede7f6 !important; /* Viola chiaro chiaro */
+    background-image: none !important;    /* Rimuove eventuali sfumature grigie */
+    border-top: 1px solid #d1c4e9;       /* Una linea sottile di un viola appena più scuro */
+    border-bottom: 1px solid #d1c4e9;
+    color: #4a148c !important;           /* Testo viola molto scuro per contrasto */
+}
+
+/* Assicuriamoci che anche i titoli dentro questo quadrante siano leggibili */
+.wrapper.style2 h2, .wrapper.style3 h2, 
+.wrapper.style2 h3, .wrapper.style3 h3 {
+    color: #4a148c !important; /* Titoli viola scuro coerenti */
+    font-weight: 400 !important;
+}
+.wrapper.style2 .icon.featured, 
+.wrapper.style3 .icon.featured {
+    color: #7e57c2 !important; /* Un viola medio che sta bene sul chiaro */
+}
+/* Rende l'immagine nel quadrante elegante */
+.wrapper.style2 .image.featured, 
+.wrapper.style3 .image.featured {
+    margin-bottom: 2em; /* Spazio tra foto e testo */
+    display: block;
+    text-align: center;
+}
+
